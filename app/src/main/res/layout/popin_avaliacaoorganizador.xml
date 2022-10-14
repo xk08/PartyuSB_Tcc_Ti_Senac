@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_margin="1dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:text="@string/popin_textview_AvaliacaoOrganizador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/popin_textview_AvaliacaoOrganizador"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:text="@string/popin_textview_AvaliacaoOrganizadorDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/popin_textview_AvaliacaoOrganizadorDescricao"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:text="@string/popin_textview_NotaOrganizador"
+            android:layout_width="263dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/popin_textview_NotaOrganizador"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/popin_ratingbar_NotaOrganizador"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:text="@string/popin_textview_OrganizadorComentario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/popin_textview_OrganizadorComentario"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/popin_edittext_ComentarioOrganizador"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/popin_edittext_ComentarioOrganizador"
+            android:layout_weight="0.53" />
+
+        <Button
+            android:text="@string/popin_button_AvaliarOrganizador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/popin_button_AvaliarOrganizador"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+</ScrollView>

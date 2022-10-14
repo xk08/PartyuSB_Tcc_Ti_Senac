@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_criar_categoria"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.aluno.partyusb.CriarCategoriaActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="384dp"
+            android:layout_height="58dp"
+            app:srcCompat="@mipmap/semmeio"
+            android:id="@+id/criarcategoria_imageview_Logo"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:text="@string/criarcategoria_textview_NomeCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/criarcategoria_textview_NomeCategoria"
+            android:layout_margin="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="@string/criarcategoria_edittext_NomeCategoria"
+            android:ems="10"
+            android:id="@+id/criarcategoria_edittext_NomeCategoria"
+            android:hint="ex: Festa"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:text="@string/criarcategoria_textview_IconeCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/criarcategoria_textview_IconeCategoria"
+            android:layout_margin="10dp" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            app:srcCompat="@drawable/ic_menu_camera"
+            android:id="@+id/criarcategoria_imagebutton_IconeCategoria"
+            android:layout_weight="2.32"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:text="@string/criarcategoria_textview_VisualizarCategorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/criarcategoria_textview_VisualizarCategorias"
+            android:layout_margin="10dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/criarcategoria_spinner_VisualizarCategorias"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:text="@string/criarcategoria_button_CriarCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:id="@+id/criarcategoria_button_CriarCategoria"
+            android:layout_margin="10dp"
+            android:textColor="?attr/colorPrimaryDark" />
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="bottom"
+    android:orientation="vertical"
+
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/telamenu_imageview_FotoUsuario"
+            android:layout_width="102dp"
+            android:layout_height="69dp"
+
+            app:srcCompat="@mipmap/xk08"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:text="Marcos Martins"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/telamenu_textview_NomeUsuario"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="5dp"
+            tools:text="@string/telamenu_textview_NomeUsuario" />
+
+        <TextView
+            android:text="@string/telamenu_textview_EnderecoUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/telamenu_textview_EnderecoUsuario"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp" />
+
+    </LinearLayout>
+
+</GridLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mostrar_eventos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.aluno.partyusb.MostrarEventosActivity"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="455dp"
+        android:layout_weight="0.76">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="434dp"
+            android:id="@+id/ListViewMostrarEvento"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp">
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="37dp">
+
+        <TextView
+            android:text="Mandar Mensagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/evento_popin_mensagem"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="normal|italic"
+            android:textColor="?attr/colorPrimaryDark"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:text="Avaliar Evento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/evento_popin_avaliar"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="normal|italic"
+            android:textColor="?attr/colorPrimaryDark"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

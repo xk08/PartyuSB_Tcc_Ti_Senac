@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.aluno.partyusb.CriarEventoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1.1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@mipmap/comborda"
+            android:id="@+id/criarevento_imageview_Logo"
+            android:layout_margin="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.02"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:text="@string/criarevento_textview_Titulo1"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:id="@+id/criarevento_textview_Titulo1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:text="@string/criarevento_textview_Descricao"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:id="@+id/criarevento_textview_Descricao"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:text="@string/criarevento_textview_NomeEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/criarevento_textview_NomeEvento"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="@string/criarevento_edittext_NomeEvento"
+            android:ems="10"
+            android:id="@+id/criarevento_edittext_NomeEvento"
+            android:hint="Campo Obrigatorio"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:text="@string/criarevento_textview_Cidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/criarevento_textview_Cidade"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/criarevento_spinner_Cidade"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:text="@string/criarevento_textview_LocalEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/criarevento_textview_LocalEvento"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="@string/criarevento_edittext_LocalEvento"
+            android:ems="10"
+            android:id="@+id/criarevento_edittext_LocalEvento"
+            android:hint="ex: SENAC"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:text="@string/criarevento_textview_Bairro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/criarevento_textview_Bairro"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/criarevento_spinner_Bairro"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:text="@string/criarevento_textview_Rua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/criarevento_textview_Rua"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="@string/criarevento_edittext_Rua"
+            android:ems="10"
+            android:id="@+id/criarevento_edittext_Rua"
+            android:hint="ex: Rua trololó"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:text="@string/criarevento_textview_Numero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/criarevento_textview_Numero"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/criarevento_edittext_Numero"
+            android:text="@string/criarevento_edittext_Numero"
+            android:hint="ex: 786"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:text="@string/criarevento_textview_Categoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/criarevento_textview_Categoria"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/criarevento_spinner_Categoria"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:text="@string/criarevento_textview_DescricaoEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/criarevento_textview_DescricaoEvento"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/criarevento_edittext_Descricao"
+            android:text="@string/criarevento_edittext_Descricao"
+            android:hint="Máximo 1000 Caracteres"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:text="@string/criarevento_textview_Preco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/criarevento_textview_Preco"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/criarevento_edittext_Preco"
+            android:text="@string/criarevento_edittext_Preco"
+            android:hint="Se Não Existir Preço, deixar Vazio"
+            android:layout_marginBottom="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:text="@string/criarevento_textview_DataEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:id="@+id/criarevento_textview_DataEvento"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="0.02" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="@string/criarevento_edittext_DataEvento"
+            android:ems="10"
+            android:id="@+id/criarevento_edittext_DataEvento"
+            android:layout_weight="0.02"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:hint="ex: 10/05/1997" />
+
+        <TextView
+            android:text="@string/criarevento_textview_HoraInicial"
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:id="@+id/criarevento_textview_HoraInicial"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="0.01"
+            android:layout_marginTop="50dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/criarevento_edittext_HoraInicial"
+            android:layout_weight="0.02"
+            android:text="@string/criarevento_edittext_HoraInicial"
+            android:hint="ex: 14:00"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:text="@string/criarevento_textview_HoraFinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:id="@+id/criarevento_textview_HoraFinal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="0.02"
+            android:layout_marginTop="50dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/criarevento_edittext_HoraFinal"
+            android:layout_weight="0.02"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/criarevento_edittext_HoraFinal"
+            android:hint="ex: 16:00" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:text="@string/criarevento_textview_ImagemEvento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/criarevento_textview_ImagemEvento"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="25dp" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_menu_camera"
+                    android:id="@+id/criarevento_imagebutton_ImagemEvento"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/criarevento_textview_ImagemEvento"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:text="@string/criarevento_textview_PagarEvento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/criarevento_textview_PagarEvento"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="25dp" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    app:srcCompat="@drawable/ic_menu_manage"
+                    android:id="@+id/criarevento_imagebutton_PagarEvento"
+                    android:elevation="1dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignEnd="@+id/criarevento_textview_PagarEvento" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:text="@string/criarevento_button_CriarEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/criarevento_button_CriarEvento"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="?attr/colorPrimaryDark" />
+
+        <TextView
+            android:text="#Partyu-SB  Desenvolvido por Marcos Martins   2016"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/criarevento_textview_Rodape"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:visible="true">
+
+        <item android:title="Meus Dados">
+            <menu>
+
+                <item
+                    android:id="@+id/Alterar_Cadastro"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="Alterar meu Cadastro">
+                </item>
+
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="Organize um Evento">
+        <menu>
+            <item
+                android:id="@+id/Criar_Evento"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Criar Novo Evento">
+            </item>
+
+
+            <item
+                android:id="@+id/Criar_Categoria"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Criar Categoria">
+            </item>
+        </menu>
+    </item>
+    <item android:title="Listar Cadastros">
+        <menu>
+            <item
+                android:id="@+id/Listar_Eventos"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Listar Eventos" />
+
+            <item
+                android:id="@+id/Listar_Usuario"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Listar Usuário" />
+            <item
+                android:id="@+id/Listar_Categoria"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Listar Categorias" />
+
+        </menu>
+    </item>
+</menu>
+

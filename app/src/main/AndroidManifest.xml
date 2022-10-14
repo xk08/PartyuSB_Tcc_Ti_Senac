@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aluno.partyusb">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/prozera"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MenuNavegacaoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <!-- /////////////////////////////////////////////////////////// -->
+
+        <activity android:name=".PrimeiraTelaActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- /////////////////////////////////////////////////////////// -->
+
+        <activity
+            android:name=".TelaLoginActivity"
+            android:screenOrientation="portrait">
+
+            <!-- Criando um Seta para retornar a uma activity -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuNavegacaoActivity" />
+        </activity>
+
+        <!-- /////////////////////////////////////////////////////////// -->
+
+        <activity android:name=".CadastroUsuarioActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CadastroSimplesActivity" />
+        </activity>
+
+        <!-- /////////////////////////////////////////////////////////// -->
+
+        <activity
+            android:name=".CriarCategoriaActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CriarEventoActivity" />
+        </activity>
+
+        <!-- /////////////////////////////////////////////////////////// -->
+
+        <activity android:name=".CriarEventoActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PrimeiraTelaActivity" />
+        </activity>
+
+        <!-- /////////////////////////////////////////////////////////// -->
+
+        <activity android:name=".CadastroSimplesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PrimeiraTelaActivity" />
+        </activity>
+
+        <!-- /////////////////////////////////////////////////////////// -->
+
+
+        <!-- Criando para lidar com o POP IN -->
+
+        <activity
+            android:name=".PopinEnviarMensagem"
+            android:theme="@style/AppTheme.CustomTheme" />
+
+        <!-- /////////////////////////////////////////////////////////// -->
+
+        <activity
+            android:name=".PopinAvaliacaoOrganizador"
+            android:theme="@style/AppTheme.CustomTheme" />
+
+        <!-- /////////////////////////////////////////////////////////// -->
+
+        <activity
+            android:name=".PopinAvaliacaoEvento"
+            android:theme="@style/AppTheme.CustomTheme" />
+
+        <!-- /////////////////////////////////////////////////////////// -->
+
+
+        <!-- PARTE RESPONSÁVEL POR LISTAR OS EVENTOS -->
+        <activity android:name=".ListarUsuarioActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuNavegacaoActivity" />
+        </activity>
+
+        <!-- /////////////////////////////////////////////////////////// -->
+
+        <activity android:name=".ListarEventoActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuNavegacaoActivity" />
+        </activity>
+
+        <!-- /////////////////////////////////////////////////////////// -->
+
+        <activity android:name=".ListarFavoritoActivity" />
+
+        <!-- /////////////////////////////////////////////////////////// -->
+
+        <activity android:name=".ListarAvaliacaoEventoActivity" />
+
+        <!-- /////////////////////////////////////////////////////////// -->
+
+        <activity android:name=".ListarAvaliacaoOrganizadorActivity" />
+
+        <!-- /////////////////////////////////////////////////////////// -->
+
+        <activity android:name=".ListarMensagemActivity" />
+
+        <!-- /////////////////////////////////////////////////////////// -->
+
+        <activity android:name=".ListarCategoriaActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuNavegacaoActivity"></meta-data>
+        </activity>
+
+        <!-- /////////////////////////////////////////////////////////// -->
+        <activity android:name=".MostrarEventosActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuNavegacaoActivity"></meta-data>
+        </activity>
+    </application>
+
+</manifest>

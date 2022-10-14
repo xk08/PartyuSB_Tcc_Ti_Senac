@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@id/Deslogar"
+        android:title="Finalizar Sessão"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        ></item>
+
+    <item android:id="@id/Sair_APP"
+        android:title="Sair do APP"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        ></item>
+
+
+</menu>
